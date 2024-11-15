@@ -14,14 +14,95 @@
         </header>
         <nav id="main-menu">
             <ul>
-                <li class="current"><a href="index.html">Hem</a></li>
-                <li><a href="bootstrap.html">Bootstrap</a></li>
+                <li><a href="index.html">Hem</a></li>
+                <li class="current"><a href="bootstrap.html">Bootstrap</a></li>
                 <li><a href="bulma.html">Bulma</a></li>
                 <li><a href="milligram.html">Milligram</a></li>
                 <li><a href="publicering.html">Publicering</a></li>
             </ul>
         </nav>
         <main>
+            <h1>Milligram</h1>
+            <a href="https://milligram.io/">Länk till Milligrams webbsida</a>
+            <h2>Vad är Milligram?</h2>
+            <p>Milligram är ett minimalistiskt CSS-ramverk designat för att ge en grundläggande stil till webbprojekt
+                utan att lägga till onödigt mycket kod. Med en storlek på bara 2 KB är Milligram extremt litet, vilket
+                gör det snabbt att ladda och enkelt att integrera i projekt som behöver en stilistisk grund men där
+                prestanda och enkelhet prioriteras. Ramverket erbjuder en grundläggande uppsättning styling för
+                typografi, knappar, formulär, och grid-layouter, vilket gör det möjligt att snabbt bygga en snygg och
+                konsekvent design utan att behöva lägga till egna anpassade stilar från grunden.</p>
+            <h2>Fördelar och Nackdelar</h2>
+            <p>Det jag tycker är bra med Milligram är dess enkelhet och lättviktighet. Eftersom det är så
+                minimalistiskt, är det perfekt för utvecklare som vill ha en ren och snabb startpunkt för sina projekt
+                utan att behöva rensa bort överflödiga stilar. Dess grundläggande grid- och typografistilar gör det
+                också lätt att skapa en responsiv layout med minimal ansträngning.</p>
+            <p>Dock kan den enkla strukturen också vara en nackdel för vissa projekt. Eftersom Milligram saknar många av
+                de mer avancerade komponenter som finns i större CSS-ramverk (som Bootstrap eller Materialize), kan det
+                kräva mer arbete om man behöver specifika UI-komponenter som modaler, tooltips eller avancerade
+                formulärstilar. Milligram passar bäst för enklare webbplatser eller projekt där utvecklaren själv vill
+                ha kontroll över designens detaljer. Min lärare Mattias har upprepat flera gånger att Milligram är
+                perfekt för att ge lite design på en prototypwebbplats men är svårare att använda för större projekt.
+            </p>
+            <h2>Besökare</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>Åldersgrupp</th>
+                        <th>Yrke</th>
+                        <th>Plats</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jonas Ståleker</td>
+                        <td>30+</td>
+                        <td>Blivande Webbutvecklare</td>
+                        <td>Malmö</td>
+                    </tr>
+                    <tr>
+                        <td>Eva Ståleker</td>
+                        <td>30+</td>
+                        <td>Anestesisköterska</td>
+                        <td>Malmö</td>
+                    </tr>
+                    <tr>
+                        <td>Rebus Ståleker</td>
+                        <td>0-12</td>
+                        <td>Hjälte</td>
+                        <td>Malmö</td>
+                    </tr>
+                    <tr>
+                        <td>Ada Ståleker</td>
+                        <td>0-12</td>
+                        <td>Prinsessa</td>
+                        <td>Malmö</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Besökslogg</h2>
+            <form>
+                <fieldset>
+                    <label for="nameField">Namn</label>
+                    <input type="text" placeholder="Jonas Ståleker" id="nameField">
+                    <label for="ageRangeField">Åldersgrupp</label>
+                    <select id="ageRangeField">
+                        <option value="0-12">0-12</option>
+                        <option value="13-19">13-19</option>
+                        <option value="20-29">20-29</option>
+                        <option value="30+">30+</option>
+                    </select>
+                    <label for="jobField">Yrke</label>
+                    <input type="text" placeholder="Webbutvecklare" id="jobField">
+                    <label for="locationField">Plats</label>
+                    <input type="text" placeholder="Sundsvall" id="locationField">
+                    <div class="float-right">
+                        <input type="checkbox" id="confirmField">
+                        <label class="label-inline" for="confirmField">Få vårt nyhetsbrev</label>
+                    </div>
+                    <input class="button-primary" type="submit" value="Skicka">
+                </fieldset>
+            </form>
 
         </main>
         <footer>
