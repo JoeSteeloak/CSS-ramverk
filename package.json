@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "bulma": "^1.0.2",
     "milligram": "^1.4.1"
   }
 }
