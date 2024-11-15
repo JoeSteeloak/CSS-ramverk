@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
+
 <body>
     <div class="container">
-        <header id="main-header" class="frontpage">
-            <a href="index.html">
-                <h1>CSS-ramverk</h1>
-            </a>
-        </header>
-        <nav id="main-menu">
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li class="current"><a href="bootstrap.html">Bootstrap</a></li>
-                <li><a href="bulma.html">Bulma</a></li>
-                <li><a href="milligram.html">Milligram</a></li>
-                <li><a href="publicering.html">Publicering</a></li>
-            </ul>
+
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">CSS-Ramverk</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Hem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bulma.html">Bulma</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="milligram.html">Milligram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="publicering.html">Publicering</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+
         <main>
-            <h1>Milligram</h1>
-            <a href="https://milligram.io/">Länk till Milligrams webbsida</a>
-            <h2>Vad är Milligram?</h2>
-            <p>Milligram är ett minimalistiskt CSS-ramverk designat för att ge en grundläggande stil till webbprojekt
-                utan att lägga till onödigt mycket kod. Med en storlek på bara 2 KB är Milligram extremt litet, vilket
-                gör det snabbt att ladda och enkelt att integrera i projekt som behöver en stilistisk grund men där
-                prestanda och enkelhet prioriteras. Ramverket erbjuder en grundläggande uppsättning styling för
-                typografi, knappar, formulär, och grid-layouter, vilket gör det möjligt att snabbt bygga en snygg och
-                konsekvent design utan att behöva lägga till egna anpassade stilar från grunden.</p>
+            <h1>Bootstrap</h1>
+            <a href="https://getbootstrap.com/" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Länk till Bootstraps webbsida</a>
+            <hr>
+            <h2>Vad är Bootstrap?</h2>
+            <p>Bootstrap är ett populärt, open-source CSS-ramverk som utvecklades av Twitter och är designat för att
+                hjälpa utvecklare snabbt och enkelt bygga responsiva och moderna webbplatser. Med Bootstrap får du
+                tillgång till ett brett utbud av färdiga komponenter som knappar, tabeller, formulär, navigeringsmenyer
+                och mycket mer, vilket minskar behovet av att skriva mycket egen CSS. Bootstrap använder ett grid-system
+                med tolv kolumner för att göra det enkelt att skapa layouter som anpassar sig till olika skärmstorlekar,
+                vilket är särskilt användbart för mobilanpassade webbplatser.</p>
             <h2>Fördelar och Nackdelar</h2>
-            <p>Det jag tycker är bra med Milligram är dess enkelhet och lättviktighet. Eftersom det är så
-                minimalistiskt, är det perfekt för utvecklare som vill ha en ren och snabb startpunkt för sina projekt
-                utan att behöva rensa bort överflödiga stilar. Dess grundläggande grid- och typografistilar gör det
-                också lätt att skapa en responsiv layout med minimal ansträngning.</p>
-            <p>Dock kan den enkla strukturen också vara en nackdel för vissa projekt. Eftersom Milligram saknar många av
-                de mer avancerade komponenter som finns i större CSS-ramverk (som Bootstrap eller Materialize), kan det
-                kräva mer arbete om man behöver specifika UI-komponenter som modaler, tooltips eller avancerade
-                formulärstilar. Milligram passar bäst för enklare webbplatser eller projekt där utvecklaren själv vill
-                ha kontroll över designens detaljer. Min lärare Mattias har upprepat flera gånger att Milligram är
-                perfekt för att ge lite design på en prototypwebbplats men är svårare att använda för större projekt.
+            <p>Bootstrap är utformat för att göra det enkelt att skapa responsiva och moderna webbplatser snabbt. Jag gillar att Bootstrap erbjuder ett omfattande bibliotek av komponenter, som knappar, tabeller, formulär och karuseller, vilket gör att man kan lägga till funktionalitet utan att behöva bygga allt från grunden. Ramverkets omfattande dokumentation ger ytterligare stöd, vilket gör det lättare att lösa problem och hitta resurser.</p>
+            <p>Trots fördelararna kan Bootstrap också ha vissa nackdelar. En av de största är filstorleken; om du bara använder några få komponenter kan ramverket ändå lägga till onödig vikt på din webbplats, vilket kan påverka laddningstiden. Det finns också en risk för att webbplatser byggda med Bootstrap kan se generiska ut, eftersom många utvecklare använder samma standardstil om de inte lägger ner tid på att anpassa designen, som man kan se på denna sidans navbar, formulär, och knappar. Dokumentationen är visserligen gedigen men det kan göra att det känns ltie överväldigande i början när man letar efter specifika desigelement.
             </p>
             <h2>Besökare</h2>
-            <table>
-                <thead>
+
+            <table class="table table-striped table-hover">
+                <thead class="table-primary">
                     <tr>
                         <th>Namn</th>
                         <th>Åldersgrupp</th>
@@ -80,27 +98,39 @@
                     </tr>
                 </tbody>
             </table>
+
             <h2>Besökslogg</h2>
             <form>
                 <fieldset>
-                    <label for="nameField">Namn</label>
-                    <input type="text" placeholder="Jonas Ståleker" id="nameField">
-                    <label for="ageRangeField">Åldersgrupp</label>
-                    <select id="ageRangeField">
-                        <option value="0-12">0-12</option>
-                        <option value="13-19">13-19</option>
-                        <option value="20-29">20-29</option>
-                        <option value="30+">30+</option>
-                    </select>
-                    <label for="jobField">Yrke</label>
-                    <input type="text" placeholder="Webbutvecklare" id="jobField">
-                    <label for="locationField">Plats</label>
-                    <input type="text" placeholder="Sundsvall" id="locationField">
-                    <div class="float-right">
-                        <input type="checkbox" id="confirmField">
-                        <label class="label-inline" for="confirmField">Få vårt nyhetsbrev</label>
+                    <div class="mb-3">
+                        <label for="nameField" class="form-label">Namn</label>
+                        <input type="text" placeholder="Jonas Ståleker" id="nameField" class="form-control">
                     </div>
-                    <input class="button-primary" type="submit" value="Skicka">
+                    <div class="mb-3">
+                        <label for="ageRangeField" class="form-label">Åldersgrupp</label>
+                        <select id="ageRangeField" class="form-control">
+                            <option value="0-12">0-12</option>
+                            <option value="13-19">13-19</option>
+                            <option value="20-29">20-29</option>
+                            <option value="30+">30+</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="jobField" class="form-label">Yrke</label>
+                        <input type="text" placeholder="Webbutvecklare" id="jobField" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="locationField" class="form-label">Plats</label>
+                        <input type="text" placeholder="Sundsvall" id="locationField" class="form-control">
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Få vårt nyhetsbrev
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary mb-3" type="submit">Skicka</button>
                 </fieldset>
             </form>
 
@@ -109,6 +139,9 @@
             <p>Jonas Ståleker &copy; 2024</p>
         </footer>
     </div><!-- End of container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
